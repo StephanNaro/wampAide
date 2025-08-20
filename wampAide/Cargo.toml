@@ -1,0 +1,11 @@
+[package]
+name = "wampAide"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+getopts = "0.2.23"
+glob = "0.3.3"
+utils = { path = "../utils" }
+cli_options = { path = "../cli_options" }
+config = { path = "../config" }

@@ -1,0 +1,10 @@
+[package]
+name = "config"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+getopts = "0.2.23"
+ini = "1.3.0"
+utils = { path = "../utils" }
+cli_options = { path = "../cli_options" }
