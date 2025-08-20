@@ -18,7 +18,7 @@ Run `wampAide --help` to see options.
     - See [sample.ini](sample.ini) for sample config file.
 - Only one other parameter is so far implemented: `-l COUNT`, which sets the limit, ie the number of logs.
 - The full command line is 'wampAide -c NAME -l COUNT`.
-    - eg 'wampAide -c sample.ini -l 35`.
+    - eg `wampAide -c sample.ini -l 35`.
 
 ## Testing
 
