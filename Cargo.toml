@@ -1,3 +1,0 @@
-[workspace]
-members = ["utils", "cli_options", "config", "wampAide"]
-resolver = "2"

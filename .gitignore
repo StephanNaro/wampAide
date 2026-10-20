@@ -1,3 +1,4 @@
-/target
+/build
+/test_logs
 
 test.ini

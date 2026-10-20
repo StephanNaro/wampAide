@@ -3,17 +3,21 @@ For testing deletion of logs, optionally copy any existing logs into a test fold
 `(for /l %i in (10,1,30) do @touch access.log.2025.06.%i) & (for /l %i in (10,1,31) do @touch access.log.2025.07.%i)`
 
 ## Sample Config File
-    [default]
-    log_path = c:\wampAideTest
-    minimum_logs = 14
+```ini
+[default]
+log_path = c:\wampAideTest
+minimum_logs = 14
+```
 
 ## Some Suggested Tests
-- No parameters:		`cargo run`
-- Missing config:	`cargo run -- -c`
-- Incorrect config:	`cargo run -- -c test.in`
-- Only config:		`cargo run -- -c test.ini`
-- Less than config:	`cargo run -- -c test.ini -l10`
-- Expect deletion:	`cargo run -- -c test.ini -l40`
+- Version info:		`wampAide -v` (or `-V`, `--version`)
+- Help menu:		`wampAide -h` (or `--help`)
+- No parameters:	`wampAide`
+- Missing config:	`wampAide -c`
+- Incorrect config:	`wampAide -c test.in`
+- Only config:		`wampAide -c test.ini`
+- Less than config:	`wampAide -c test.ini -l10`
+- Expect deletion:	`wampAide -c test.ini -l40`
 
 ### Config File
 
